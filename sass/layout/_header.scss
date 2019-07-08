@@ -1,0 +1,15 @@
+header {
+    .main-nav {
+        &__list {
+            list-style-type: none;
+        }
+
+        &__link {
+            text-decoration: none;
+        }
+
+        &__logo {
+            width: 2rem;
+        }
+    }
+}
