@@ -13,34 +13,48 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+:root {
+  --dimgray: rgb(102, 102, 102);
+  --white: #fff;
+  --whitesmoke: rgb(234, 234, 234);
+  --nero: rgb(34, 34, 34);
+  --sun: rgb(241, 99, 52);
+  --malachite: #13CE66;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
 
 html {
-  font-size: 62.5%; }
-  @media only screen and (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
-    html {
-      font-size: 50%; } }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
+  font-size: 62.5%;
+}
 
-header .main-nav__list {
-  list-style-type: none; }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
-header .main-nav__link {
-  text-decoration: none; }
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
 
-header .main-nav__logo {
-  width: 2rem; }
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
 
 .row {
   max-width: 114rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
+/*# sourceMappingURL=app.css.map */
