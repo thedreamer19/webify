@@ -7,10 +7,18 @@
 }
 
 @mixin absCenter {
+    text-align: center;
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@mixin button($font-z, $bd, $pad, $rad){
+    font-size: $font-z;
+    border: $bd;
+    padding: $pad;
+    border-radius: $rad;
 }
 
 

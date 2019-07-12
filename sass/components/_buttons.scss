@@ -1,0 +1,16 @@
+.btn {
+     @include button(1.8rem, 2px solid, 1rem 1.5rem, 4px);
+     display: inline-block;
+
+        &--ghost {
+            background-color: var(--dimgray-light);
+            color:var(--nero);
+            border-color:var(--nero);
+        }
+
+        &--fill {
+            background-color: var(--sun);
+            color:var(--white);
+            border-color:var(--white);
+        }
+    }
