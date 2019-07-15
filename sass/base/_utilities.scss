@@ -1,37 +1,250 @@
-.u-center {
-    text-align: center;
+
+
+//
+// Align
+//
+
+.text-left      { text-align: left; }
+.text-right     { text-align: right; }
+.text-center    { text-align: center; }
+.text-just      { text-align: justify; }
+
+.align-top      { vertical-align: top;}
+.align-bottom   { vertical-align: bottom;}
+.align-middle   { vertical-align: middle;}
+.align-baseline { vertical-align: baseline; }
+
+//
+// Border Radius
+//
+
+.radius        { border-radius: $base-radius-unit; }
+.radius-top    { border-radius: $base-radius-unit $base-radius-unit 0 0; }
+.radius-right  { border-radius: 0 $base-radius-unit $base-radius-unit 0; }
+.radius-bottom { border-radius: 0 0 $base-radius-unit $base-radius-unit; }
+.radius-left   { border-radius: $base-radius-unit 0 0 $base-radius-unit; }
+
+//
+// Display
+//
+
+.inline       { display: inline; }
+.block        { display: block; }
+.inline-block { display: inline-block; }
+.hidden       { display: none; }
+
+//
+// Lists
+//
+
+.no-bullets   { list-style: none; }
+
+//
+// Margin
+//
+
+//
+// Top Margin
+
+.margin-top-none        { margin-top: 0; }
+.margin-top-quarter     { margin-top: quarter($base-space-unit); }
+.margin-top-half        { margin-top: halve($base-space-unit); }
+.margin-top-one         { margin-top: $base-space-unit; }
+.margin-top-two         { margin-top: double($base-space-unit); }
+.margin-top-three       { margin-top: threefold($base-space-unit); }
+.margin-top-four        { margin-top: quadruple($base-space-unit); }
+
+
+//
+// Bottom Margin
+
+.margin-bottom-none     { margin-bottom: 0; }
+.margin-bottom-quarter  { margin-bottom: quarter($base-space-unit); }
+.margin-bottom-half     { margin-bottom: halve($base-space-unit); }
+.margin-bottom-one      { margin-bottom: $base-space-unit; }
+.margin-bottom-two      { margin-bottom: double($base-space-unit); }
+.margin-bottom-three    { margin-bottom: threefold($base-space-unit); }
+.margin-bottom-four     { margin-bottom: quadruple($base-space-unit); }
+
+
+//
+// Right Margin
+.margin-right-none      { margin-right: 0; }
+.margin-right-quarter   { margin-right: quarter($base-space-unit); }
+.margin-right-half      { margin-right: halve($base-space-unit); }
+.margin-right-one       { margin-right: $base-space-unit; }
+.margin-right-two       { margin-right: double($base-space-unit); }
+.margin-right-three     { margin-right: threefold($base-space-unit); }
+.margin-right-four      { margin-right: quadruple($base-space-unit); }
+
+
+//
+// Left Margin
+
+.margin-left-none       { margin-left: 0; }
+.margin-left-quarter   { margin-left: quarter($base-space-unit); }
+.margin-left-half      { margin-left: halve($base-space-unit); }
+.margin-left-one       { margin-left: $base-space-unit; }
+.margin-left-two       { margin-left: double($base-space-unit); }
+.margin-left-three     { margin-left: threefold($base-space-unit); }
+.margin-left-four      { margin-left: quadruple($base-space-unit); }
+
+
+//
+// Margin All
+.margin-none      { margin: 0; }
+.margin-quarter   { margin: quarter($base-space-unit); }
+.margin-half      { margin: halve($base-space-unit); }
+.margin-one       { margin: $base-space-unit; }
+.margin-two       { margin: double($base-space-unit); }
+.margin-three     { margin: threefold($base-space-unit); }
+.margin-four      { margin: quadruple($base-space-unit); }
+
+//
+// Padding
+//
+
+//
+// Top Padding
+
+.padding-top-none       { padding-top: 0; }
+.padding-top-quarter    { padding-top: quarter($base-space-unit); }
+.padding-top-halve      { padding-top: halve($base-space-unit); }
+.padding-top-one        { padding-top: $base-space-unit; }
+.padding-top-two        { padding-top: double($base-space-unit); }
+.padding-top-three      { padding-top: threefold($base-space-unit); }
+.padding-top-four       { padding-top: quadruple($base-space-unit); }
+
+
+//
+// Bottom Padding
+
+.padding-bottom-none    { padding-bottom: 0; }
+.padding-bottom-quarter { padding-bottom: quarter($base-space-unit); }
+.padding-bottom-halve   { padding-bottom: halve($base-space-unit); }
+.padding-bottom-one     { padding-bottom: $base-space-unit; }
+.padding-bottom-two     { padding-bottom: double($base-space-unit); }
+.padding-bottom-three   { padding-bottom: threefold($base-space-unit); }
+.padding-bottom-four    { padding-bottom: quadruple($base-space-unit); }
+
+
+//
+// Right Padding
+
+.padding-right-none       { padding-right: 0; }
+.padding-right-quarter    { padding-right: quarter($base-space-unit); }
+.padding-right-halve      { padding-right: halve($base-space-unit); }
+.padding-right-one        { padding-right: $base-space-unit; }
+.padding-right-two        { padding-right: double($base-space-unit); }
+.padding-right-three      { padding-right: threefold($base-space-unit); }
+.padding-right-four       { padding-right: quadruple($base-space-unit); }
+
+
+//
+// Left Padding
+.padding-left-none       { padding-left: 0; }
+.padding-left-quarter    { padding-left: quarter($base-space-unit); }
+.padding-left-halve      { padding-left: halve($base-space-unit); }
+.padding-left-one        { padding-left: $base-space-unit; }
+.padding-left-two        { padding-left: double($base-space-unit); }
+.padding-left-three      { padding-left: threefold($base-space-unit); }
+.padding-left-four       { padding-left: quadruple($base-space-unit); }
+
+
+//
+// Padding All
+
+.padding-none           { padding: 0; }
+.padding-quarter        { padding: quarter($base-space-unit); }
+.padding-halve          { padding: halve($base-space-unit); }
+.padding-one            { padding: $base-space-unit; }
+.padding-two            { padding: double($base-space-unit); }
+.padding-three          { padding: threefold($base-space-unit); }
+.padding-four           { padding: quadruple($base-space-unit); }
+
+//
+// Positions
+//
+
+.fixed    { position: fixed; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+//
+// Typography
+//
+
+.bold     { font-weight: bold; }
+.regular  { font-weight: normal; }
+.italic   { font-style: italic; }
+
+
+//
+// Text Controlls
+//
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.mb-15 {
-    margin-bottom: 1rem;
+.break-word         { word-wrap: break-word; }
+.no-wrap            { white-space: nowrap !important; }
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+ .hidden {
+    display: none !important;
+    visibility: hidden;
 }
 
-.mb-25 {
-    margin-bottom: 2.5rem;
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
 }
 
-.tt-c {
-    text-transform: capitalize;
-}
+//
+// Width && Height
+//
 
-.tt-u {
-    text-transform: uppercase;
-}
+.fit              { max-width: 100%; }
+.half-width       { width: 50% }
+.full-width       { width: 100%; }
+.full-height      { height: 100%; }
+
+//
+// Align
+//
+
+.u-center { text-align: center; }
+.u-right { text-align: right; }
+.u-left { text-align: left; }
+
+//
+// Text Transfrom
+//
+
+.tt-c { text-transform: capitalize; }
+.tt-u { text-transform: uppercase; }
 
 // FONT SIZE 
 
-.fz-17 {
-    font-size: 1.7rem;
-}
-
-.fz-18 {
-    font-size: 1.8rem;
-}
-
-.fz-25 {
-    font-size: 2.5rem;
-}
-
-.fz-40{
-    font-size: 4rem;
-}
+.fz-17 { font-size: 1.7rem; }
+.fz-18 { font-size: 1.8rem; }
+.fz-25 { font-size: 2.5rem; }
+.fz-40 { font-size: 4rem; }
