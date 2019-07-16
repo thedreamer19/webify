@@ -13,16 +13,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
-:root {
-  --dimgray: rgb(102, 102, 102);
-  --dimgray-light:rgba(102, 102, 102, .05);
-  --white: #fff;
-  --whitesmoke: rgb(234, 234, 234);
-  --nero: rgb(34, 34, 34);
-  --sun: rgb(241, 99, 52);
-  --malachite: #13CE66;
-}
-
 *,
 *::after,
 *::before {
