@@ -519,77 +519,8 @@ html {
   font-size: 4rem;
 }
 
-.btn {
-  font-size: 1.8rem;
-  border: 2px solid;
-  padding: 1rem 1.5rem;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.btn--ghost {
-  background-color: var(--dimgray-light);
-  color: var(--nero);
-  border-color: var(--nero);
-}
-
-.btn--fill {
-  background-color: var(--sun);
-  color: var(--white);
-  border-color: var(--white);
-}
-
 .row {
   max-width: 114rem;
   margin: 0 auto;
-}
-
-header {
-  background-color: #fc3;
-  height: 90vh;
-}
-
-header .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 9rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header .main-nav__list:not(:last-child) {
-  margin-right: 4.5rem;
-  text-transform: capitalize;
-}
-
-header .main-nav__list:first-child {
-  margin-right: auto;
-}
-
-header .main-nav__link {
-  color: var(--nero);
-}
-
-header .main-nav__logo {
-  color: var(--nero);
-}
-
-header .hero__box {
-  text-align: center;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-header .hero__heading {
-  text-transform: uppercase;
-}
-
-header .hero__copy {
-  line-height: 150%;
 }
 /*# sourceMappingURL=app.css.map */
