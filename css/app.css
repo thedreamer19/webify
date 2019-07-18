@@ -1,0 +1,398 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+html {
+  font-family: 'Roboto';
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-just {
+  text-align: justify; }
+
+.align-top {
+  vertical-align: top; }
+
+.align-bottom {
+  vertical-align: bottom; }
+
+.align-middle {
+  vertical-align: middle; }
+
+.align-baseline {
+  vertical-align: baseline; }
+
+.radius {
+  border-radius: 3px; }
+
+.radius-top {
+  border-radius: 3px 3px 0 0; }
+
+.radius-right {
+  border-radius: 0 3px 3px 0; }
+
+.radius-bottom {
+  border-radius: 0 0 3px 3px; }
+
+.radius-left {
+  border-radius: 3px 0 0 3px; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.inline-block {
+  display: inline-block; }
+
+.hidden {
+  display: none; }
+
+.no-bullets {
+  list-style: none; }
+
+.margin-top-none {
+  margin-top: 0; }
+
+.margin-top-quarter {
+  margin-top: 0.25em; }
+
+.margin-top-half {
+  margin-top: 0.5em; }
+
+.margin-top-one {
+  margin-top: 1em; }
+
+.margin-top-two {
+  margin-top: 2em; }
+
+.margin-top-three {
+  margin-top: 3em; }
+
+.margin-top-four {
+  margin-top: 4em; }
+
+.margin-bottom-none {
+  margin-bottom: 0; }
+
+.margin-bottom-quarter {
+  margin-bottom: 0.25em; }
+
+.margin-bottom-half {
+  margin-bottom: 0.5em; }
+
+.margin-bottom-one {
+  margin-bottom: 1em; }
+
+.margin-bottom-two {
+  margin-bottom: 2em; }
+
+.margin-bottom-three {
+  margin-bottom: 3em; }
+
+.margin-bottom-four {
+  margin-bottom: 4em; }
+
+.margin-right-none {
+  margin-right: 0; }
+
+.margin-right-quarter {
+  margin-right: 0.25em; }
+
+.margin-right-half {
+  margin-right: 0.5em; }
+
+.margin-right-one {
+  margin-right: 1em; }
+
+.margin-right-two {
+  margin-right: 2em; }
+
+.margin-right-three {
+  margin-right: 3em; }
+
+.margin-right-four {
+  margin-right: 4em; }
+
+.margin-left-none {
+  margin-left: 0; }
+
+.margin-left-quarter {
+  margin-left: 0.25em; }
+
+.margin-left-half {
+  margin-left: 0.5em; }
+
+.margin-left-one {
+  margin-left: 1em; }
+
+.margin-left-two {
+  margin-left: 2em; }
+
+.margin-left-three {
+  margin-left: 3em; }
+
+.margin-left-four {
+  margin-left: 4em; }
+
+.margin-none {
+  margin: 0; }
+
+.margin-quarter {
+  margin: 0.25em; }
+
+.margin-half {
+  margin: 0.5em; }
+
+.margin-one {
+  margin: 1em; }
+
+.margin-two {
+  margin: 2em; }
+
+.margin-three {
+  margin: 3em; }
+
+.margin-four {
+  margin: 4em; }
+
+.padding-top-none {
+  padding-top: 0; }
+
+.padding-top-quarter {
+  padding-top: 0.25em; }
+
+.padding-top-halve {
+  padding-top: 0.5em; }
+
+.padding-top-one {
+  padding-top: 1em; }
+
+.padding-top-two {
+  padding-top: 2em; }
+
+.padding-top-three {
+  padding-top: 3em; }
+
+.padding-top-four {
+  padding-top: 4em; }
+
+.padding-bottom-none {
+  padding-bottom: 0; }
+
+.padding-bottom-quarter {
+  padding-bottom: 0.25em; }
+
+.padding-bottom-halve {
+  padding-bottom: 0.5em; }
+
+.padding-bottom-one {
+  padding-bottom: 1em; }
+
+.padding-bottom-two {
+  padding-bottom: 2em; }
+
+.padding-bottom-three {
+  padding-bottom: 3em; }
+
+.padding-bottom-four {
+  padding-bottom: 4em; }
+
+.padding-right-none {
+  padding-right: 0; }
+
+.padding-right-quarter {
+  padding-right: 0.25em; }
+
+.padding-right-halve {
+  padding-right: 0.5em; }
+
+.padding-right-one {
+  padding-right: 1em; }
+
+.padding-right-two {
+  padding-right: 2em; }
+
+.padding-right-three {
+  padding-right: 3em; }
+
+.padding-right-four {
+  padding-right: 4em; }
+
+.padding-left-none {
+  padding-left: 0; }
+
+.padding-left-quarter {
+  padding-left: 0.25em; }
+
+.padding-left-halve {
+  padding-left: 0.5em; }
+
+.padding-left-one {
+  padding-left: 1em; }
+
+.padding-left-two {
+  padding-left: 2em; }
+
+.padding-left-three {
+  padding-left: 3em; }
+
+.padding-left-four {
+  padding-left: 4em; }
+
+.padding-none {
+  padding: 0; }
+
+.padding-quarter {
+  padding: 0.25em; }
+
+.padding-halve {
+  padding: 0.5em; }
+
+.padding-one {
+  padding: 1em; }
+
+.padding-two {
+  padding: 2em; }
+
+.padding-three {
+  padding: 3em; }
+
+.padding-four {
+  padding: 4em; }
+
+.fixed {
+  position: fixed; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
+
+.bold {
+  font-weight: bold; }
+
+.regular {
+  font-weight: normal; }
+
+.italic {
+  font-style: italic; }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.break-word {
+  word-wrap: break-word; }
+
+.no-wrap {
+  white-space: nowrap !important; }
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.fit {
+  max-width: 100%; }
+
+.half-width {
+  width: 50%; }
+
+.full-width {
+  width: 100%; }
+
+.full-height {
+  height: 100%; }
+
+.u-center {
+  text-align: center; }
+
+.u-right {
+  text-align: right; }
+
+.u-left {
+  text-align: left; }
+
+.tt-c {
+  text-transform: capitalize; }
+
+.tt-u {
+  text-transform: uppercase; }
+
+.fz-17 {
+  font-size: 1.7rem; }
+
+.fz-18 {
+  font-size: 1.8rem; }
+
+.fz-25 {
+  font-size: 2.5rem; }
+
+.fz-40 {
+  font-size: 4rem; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
