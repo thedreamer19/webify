@@ -11,37 +11,45 @@ html(lang="en")
     header
       .row
         ul.main-nav
-          li.main-nav__list
+          li.main-nav__list(class="margin-right-two")
             a(href="#").main-nav__link: i.main-nav__icon(class="fab fa-facebook-f")
-          li.main-nav__list
+          li.main-nav__list(class="margin-right-two")
             a(href="#").main-nav__link: i.main-nav__icon(class="fab fa-twitter")
-          li.main-nav__list
+          li.main-nav__list(class="margin-right-two")
             a(href="#").main-nav__link: i.main-nav__icon(class="fab fa-instagram")
-          li.main-nav__list
+          li.main-nav__list(class="margin-right-two")
             a(href="#").main-nav__link: i.main-nav__icon(class="fab fa-google-plus-g")
 
           li.main-nav__list
             form.main-nav__form
-                i.main-nav__icon(class="fas fa-search")
+                i.main-nav__icon(class="fas fa-search margin-right-one")
                 input.main-nav__text-box(type="text", placeholder="Start searching ...")
 
           li.main-nav__list
             a(href="#", class="tt-c ").main-nav__logo supro.
 
-          li.main-nav__list
+          li.main-nav__list(class="margin-right-two")
             a(href="#").main-nav__link: i.main-nav__icon(class="far fa-user")
-          li.main-nav__list
+          li.main-nav__list(class="margin-right-two")
             a(href="#").main-nav__link: i.main-nav__icon(class="far fa-heart")
-          li.main-nav__list
+          li.main-nav__list(class="margin-right-two")
             a(href="#").main-nav__link
               i.main-nav__icon(class="fas fa-shopping-basket")
               span.main-nav__counter 0
               
 
           li.main-nav__list
-            span.main-nav__text(class="tt-c margin-right-one") menu
+            span.main-nav__text(class="tt-u margin-right-one") menu
             i.main-nav__icon(class="fas fa-bars")
 
+    // HERO
+
+    section.hero-box
+      .hero
+        .row
+          span.hero__intro(class="margin-bottom-one tt-u") supro masonry
+          h1.hero__heading-primary Unique products by <br/> the world’s top designers
+       
 
 
 

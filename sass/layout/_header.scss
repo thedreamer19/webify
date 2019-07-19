@@ -15,7 +15,6 @@ header {
             }
         }
         &__icon {
-            margin-right: 2rem;
             font-size: 1.7rem;
             &:last-child {
                 font-size: 1.8rem;
@@ -39,8 +38,8 @@ header {
             padding: 1px 5px;
             position: absolute;
             font-size: 1.3rem;
-            top: -5px;
-            right: 8px;
+            top: -7px;
+            right: -1rem;
             color: white;
         }
     }
