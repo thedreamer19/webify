@@ -1,0 +1,9 @@
+.main-nav {
+    &__text-box {
+        border: 0;
+        width: 11rem;
+        &:focus {
+            outline: 0;
+        }
+    }
+}

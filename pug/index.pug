@@ -1,13 +1,51 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset='UTF-8')
-        meta(name="viewport", 
-        content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="css/app.css")
-        title supro website template
-    body
-      header
-        
-          
+  head
+    meta(charset='UTF-8')
+    meta(name="viewport", 
+    content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="css/app.css")
+    title supro 
+  body
+    header
+      .row
+        ul.main-nav
+          li.main-nav__list
+            a(href="#").main-nav__link: i.main-nav__icon(class="fab fa-facebook-f")
+          li.main-nav__list
+            a(href="#").main-nav__link: i.main-nav__icon(class="fab fa-twitter")
+          li.main-nav__list
+            a(href="#").main-nav__link: i.main-nav__icon(class="fab fa-instagram")
+          li.main-nav__list
+            a(href="#").main-nav__link: i.main-nav__icon(class="fab fa-google-plus-g")
+
+          li.main-nav__list
+            form.main-nav__form
+                i.main-nav__icon(class="fas fa-search")
+                input.main-nav__text-box(type="text", placeholder="Start searching ...")
+
+          li.main-nav__list
+            a(href="#", class="tt-c ").main-nav__logo supro.
+
+          li.main-nav__list
+            a(href="#").main-nav__link: i.main-nav__icon(class="far fa-user")
+          li.main-nav__list
+            a(href="#").main-nav__link: i.main-nav__icon(class="far fa-heart")
+          li.main-nav__list
+            a(href="#").main-nav__link
+              i.main-nav__icon(class="fas fa-shopping-basket")
+              span.main-nav__counter 0
+              
+
+          li.main-nav__list
+            span.main-nav__text(class="tt-c margin-right-one") menu
+            i.main-nav__icon(class="fas fa-bars")
+
+
+
+
+
+
+
+    script(src="https://use.fontawesome.com/releases/v5.8.2/js/all.js")

@@ -13,6 +13,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+:root {
+  --mineshaft: #222222;
+  --froly: #F68872;
+  --boulder: #777777;
+  --dustygray: #999999;
+  --lightgray: rgba(0, 0, 0, .2); }
+
 *,
 *::after,
 *::before {
@@ -25,6 +32,9 @@ a {
 
 li {
   list-style-type: none; }
+
+::placeholder {
+  color: var(--lightgray); }
 
 html {
   font-family: 'Roboto';
@@ -393,6 +403,50 @@ html {
 .fz-40 {
   font-size: 4rem; }
 
+.main-nav__text-box {
+  border: 0;
+  width: 11rem; }
+  .main-nav__text-box:focus {
+    outline: 0; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
+
+header .main-nav {
+  display: flex;
+  align-items: center;
+  height: 9rem; }
+  header .main-nav__list:nth-child(6) {
+    margin: auto; }
+  header .main-nav__list:last-child {
+    margin-left: 7rem; }
+  header .main-nav__list:nth-child(9) {
+    position: relative; }
+  header .main-nav__icon {
+    margin-right: 2rem;
+    font-size: 1.7rem; }
+    header .main-nav__icon:last-child {
+      font-size: 1.8rem; }
+  header .main-nav__logo {
+    color: var(--mineshaft);
+    font-size: 3rem;
+    font-weight: bold; }
+  header .main-nav__link {
+    font-size: 1.8rem;
+    color: var(--mineshaft); }
+  header .main-nav__text {
+    font-size: 1.7rem; }
+  header .main-nav__counter {
+    background-color: var(--froly);
+    border-radius: 100%;
+    padding: 1px 5px;
+    position: absolute;
+    font-size: 1.3rem;
+    top: -5px;
+    right: 8px;
+    color: white; }
+
+body {
+  border: 2rem solid var(--froly);
+  height: 100vh; }

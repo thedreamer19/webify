@@ -1,13 +1,14 @@
 // COLORS 
-
 :root {
-   
-} 
+    --mineshaft: #222222;
+    --froly: #F68872;
+    --boulder: #777777;
+    --dustygray: #999999;
+    --lightgray: rgba(0, 0, 0, .2);
+}
 
 // GRID 
 $grid-width: 114rem;
-
 // Space unit
-
-$base-space-unit:       1em !default;
-$base-radius-unit:      3px !default;
+$base-space-unit: 1em !default;
+$base-radius-unit: 3px !default;

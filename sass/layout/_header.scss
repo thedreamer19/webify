@@ -1,0 +1,47 @@
+header {
+    .main-nav {
+        display: flex;
+        align-items: center;
+        height: 9rem;
+        &__list {
+            &:nth-child(6) {
+                margin: auto;
+            }
+            &:last-child {
+                margin-left: 7rem;
+            }
+            &:nth-child(9) {
+                position: relative;
+            }
+        }
+        &__icon {
+            margin-right: 2rem;
+            font-size: 1.7rem;
+            &:last-child {
+                font-size: 1.8rem;
+            }
+        }
+        &__logo {
+            color: var(--mineshaft);
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        &__link {
+            font-size: 1.8rem;
+            color: var(--mineshaft);
+        }
+        &__text {
+            font-size: 1.7rem;
+        }
+        &__counter {
+            background-color: var(--froly);
+            border-radius: 100%;
+            padding: 1px 5px;
+            position: absolute;
+            font-size: 1.3rem;
+            top: -5px;
+            right: 8px;
+            color: white;
+        }
+    }
+}
