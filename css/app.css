@@ -27,6 +27,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   padding: 0;
   box-sizing: inherit; }
 
+html, body {
+  min-height: 100%; }
+
 a {
   text-decoration: none; }
 
@@ -404,6 +407,14 @@ html {
 .fz-40 {
   font-size: 4rem; }
 
+.products .row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.products .product {
+  width: 31%;
+  text-align: center; }
+
 .main-nav__text-box {
   border: 0;
   width: 11rem; }
@@ -412,7 +423,8 @@ html {
 
 .row {
   max-width: 124rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 94%; }
 
 header .main-nav {
   display: flex;
@@ -448,8 +460,7 @@ header .main-nav {
     color: white; }
 
 body {
-  border: 2rem solid var(--froly);
-  height: 100vh; }
+  border: 2rem solid var(--froly); }
 
 .hero-box {
   height: 40rem; }

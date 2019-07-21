@@ -1,0 +1,12 @@
+.products {
+
+    .row {
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        width: 31%;
+        text-align: center;
+    }
+}
