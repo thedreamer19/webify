@@ -21,6 +21,13 @@
     border-radius: $rad;
 }
 
+@mixin trans($style, $time, $type) {
+  -webkit-transition: $style $time $type;
+  -moz-transition: $style $time $type;
+  -ms-transition: $style $time $type;
+  -o-transition: $style $time $type;
+  transition: $style $time $type;
+}
 
 // MEDIA QUERY MANAGER
 /*

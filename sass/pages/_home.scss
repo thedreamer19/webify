@@ -3,12 +3,12 @@ body {
 }
 
 .hero-box {
-    height:40rem;
+    height:60rem;
 }
 
 .hero {
     @include absCenter();
-    width:70%;
+    width:75%;
     margin-top: 4rem;
 
     &__intro {

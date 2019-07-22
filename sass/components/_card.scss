@@ -1,12 +1,47 @@
 .products {
-
     .row {
         display:flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .product {
-        width: 31%;
+        width: 26%;
         text-align: center;
+
+        &__img-box{
+          overflow: hidden;
+        }
+
+        &__image {
+            @include trans(all, .5s, ease);
+            transform: scale(1.1);
+
+            &:hover {
+              transform: scale(1.2);
+            }
+        }
+
+        &__title {
+          font-size: 1.9rem
+        }
+
+        &__price {
+          font-size: 1.6rem;
+          color: var(--dustygray);
+        }
+    }
+
+    &__cta {
+      flex-basis: 100%;
+      text-align: center;
+      font-size: 2rem;
+      margin:13rem 0;
+    }
+
+    &__link {
+      color: var(--mineshaft);
+      border-bottom: 2px solid var(--boulder);
     }
 }
