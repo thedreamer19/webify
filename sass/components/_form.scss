@@ -1,9 +1,30 @@
 .main-nav {
-    &__text-box {
-        border: 0;
-        width: 11rem;
-        &:focus {
-            outline: 0;
-        }
+  &__text-box {
+    border: 0;
+    width: 11rem;
+    &:focus {
+      outline: 0;
     }
+  }
+}
+
+.newsletter {
+  position: relative;
+  padding: 12rem 0;
+
+  &__box {
+    @include absCenter();
+  }
+
+  &__text-box {
+    padding: 1.5rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+  }
+
+  &__copy {
+    font-size: 1.8rem;
+  }
 }

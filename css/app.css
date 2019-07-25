@@ -25,9 +25,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
-html, body {
+html,
+body {
   min-height: 100%; }
 
 a {
@@ -41,7 +42,7 @@ li {
   font-size: 1.5rem; }
 
 html {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
@@ -52,6 +53,12 @@ html {
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
+
+.hero__heading-primary {
+  font-size: 7.5rem; }
+
+.newsletter__title {
+  font-size: 3rem; }
 
 .text-left {
   text-align: left; }
@@ -449,6 +456,22 @@ html {
   .main-nav__text-box:focus {
     outline: 0; }
 
+.newsletter {
+  position: relative;
+  padding: 12rem 0; }
+  .newsletter__box {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .newsletter__text-box {
+    padding: 1.5rem; }
+  .newsletter__title {
+    font-size: 3.5rem; }
+  .newsletter__copy {
+    font-size: 1.8rem; }
+
 .row {
   max-width: 124rem;
   margin: 0 auto;
@@ -506,5 +529,3 @@ body {
     font-weight: bold;
     display: inline-block;
     color: var(--froly); }
-  .hero__heading-primary {
-    font-size: 7.5rem; }
